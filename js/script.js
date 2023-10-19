@@ -17,7 +17,6 @@ let portfolio = {
         portfolio.bind();
     },
     bind: function () {
-
         $('body').on('click', '#formSubmit', portfolio.sendEmail)
     },
     textAutoType: function () {
