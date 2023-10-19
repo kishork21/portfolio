@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FEFCF3;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #27374D;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input {
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #27374D;
+  padding: 10px 5px 0 5px;
+  color: #27374D;
+}
+input:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #27374D;
+  padding: 10px 5px 0 5px;
+  color: #27374D;
+}
+textarea:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+#about1 .header {
+  text-align: center;
+}
+#about1 .header h1 {
+  font-family: "Playfair Display", serif;
+  color: #27374D;
+}
+#about1 #about {
+  padding: 0 30px;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#about1 #about #about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about1 #about #about-info p {
+  font-size: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  #about1 #about #about-info p {
+    font-size: 15px;
+  }
+}
+#about1 #about #about-info .contact-btn-area #download-cv {
+  font-size: 15px;
+}
+#about1 #about #about-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about1 #about #about-img img {
+  width: 60%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all ls ease-in-out;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 70% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  #about1 .header h1 {
+    font-size: 35px;
+  }
+  #about1 #about {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #about1 #about #about-info {
+    height: 50vh;
+  }
+  #about1 #about #about-info .contact-btn-area #download-cv,
+  #about1 #about #about-info .contact-btn-area button {
+    font-size: 10px !important;
+  }
+  #about1 #about #about-img {
+    height: 50vh;
+  }
+  #about1 #about #about-img img {
+    width: 80%;
+  }
+}/*# sourceMappingURL=about.css.map */

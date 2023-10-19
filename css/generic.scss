@@ -1,0 +1,76 @@
+$navbarText: #fff;
+$hoverNavbarText: hsl(0, 2%, 27%);
+$navbarBGcolor: #27374D;
+$navbarHoverBGcolor: #2D4356;
+$navLineHeigth: 50px;
+$font-family: 'Playfair Display', serif;
+$bodyBg: #FEFCF3;
+
+@mixin inputArea {
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid $navbarBGcolor;
+    padding: 10px 5px 0 5px;
+    color: $navbarBGcolor;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin header {
+    text-align: center;
+
+    h1 {
+        font-family: $font-family;
+        color: $navbarBGcolor;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $bodyBg;
+    // background-color: rgb(14, 14, 14) !important;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: $navbarBGcolor;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+input {
+    height: 40px;
+    @include inputArea;
+}
+
+textarea {
+    @include inputArea;
+}
+
+button {
+    &:focus-visible {
+        outline: none;
+    }
+}

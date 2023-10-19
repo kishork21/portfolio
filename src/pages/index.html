@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../libs/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/generic.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/skills.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="../../libs/jquery.js"></script>
+    <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+    <script src="../../libs/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label for="check" class="checkbtn"><i onclick="sidebar2()" class="fa-solid fa-bars"></i></label>
+            <label class="logo">DesignX</label>
+            <ul id="links">
+                <i class="fa-solid fa-xmark fa-2x" onclick="sidebar1()"></i>
+                <li onclick="sidebar2()"><a href="#home1">Home</a></li>
+                <li onclick="sidebar2()"><a href="#about1">About</a></li>
+                <li onclick="sidebar2()"><a href="#skills1">Skills</a></li>
+                <li onclick="sidebar2()"><a href="#contact1">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="home1">
+            <div class="header">
+                <h1>Home</h1>
+            </div>
+            <div id="home">
+                <article id="imgContainer">
+                    <img src="../../images/Hire-Web-Developers.png" alt="loading...">
+                </article>
+
+                <article id="intro1">
+
+                    <p class="just-text text-danger">get every single solution</p>
+
+                    <span class="name">
+                        <p class="typing">I'm <span class="auto-type"></span></p>
+                        <p>Kishor Kumar Kumawat</p>
+                    </span>
+
+                    <p class="intro-text">A Frontend Developer who loves coding has been working in the UI field for a
+                        year.
+                    </p>
+                    <div class="contact-btn-area mt-4">
+                        <a class="btn btn-outline-warning" href="#contact1">Say Hello <i class="fa-brands fa-telegram"
+                                style="color: #27374d;"></i></a>
+                    </div>
+
+
+                </article>
+            </div>
+
+        </div>
+        <hr>
+
+        <div id="about1">
+            <div class="header">
+                <h1>About</h1>
+            </div>
+            <div id="about">
+
+                <article id="about-info">
+                    <p>A <strong>Front-end Developer</strong> with over <strong>1+ years</strong> of substantial
+                        experience,
+                        exceptional analytical and critical thinking abilities, seeking a challenging and
+                        growth-oriented
+                        career opportunity.</p>
+                    <p>Committed to applying and enhancing my knowledge, skills, and competencies to contribute to an
+                        organization's advancement.
+                    </p>
+                    <div class="contact-btn-area mt-4">
+                        <a href="../../docs/Kishor Kumar Kumawat Resume.pdf" target="_blank"
+                            class="btn btn btn-danger me-2" id="download-cv" download>Resume <i
+                                class="fa-solid fa-arrow-down fa-bounce"></i>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-warning" id="contact-btn">Contact <i
+                                class="fa-solid fa-rocket fa-beat"></i>
+                        </button> -->
+                    </div>
+                </article>
+                <article id="about-img">
+                    <img src="../../images/170363-gates-bill-free-download-image.png" alt="" srcset="">
+                </article>
+            </div>
+        </div>
+        <hr>
+
+        <div id="skills1">
+            <div class="header">
+                <h1>Skills</h1>
+            </div>
+            <div id="skills">
+                <div id="skills-area">
+                    <div class="skills-name">
+                        <div class="name-area">
+                            <div class="left">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div></div>
+
+                        <div></div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="name-area">
+                            <div class="right">
+                                <h4>CSS</h4>
+                            </div>
+                        </div>
+
+                        <div class="name-area">
+                            <div class="left">
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div></div>
+
+                        <div></div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="name-area">
+                            <div class="right">
+                                <h4>jQuery</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-name">
+
+                        <div class="name-area">
+                            <div class="left">
+                                <h4>Bootstrap</h4>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div></div>
+
+                        <div></div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="name-area">
+                            <div class="right">
+                                <h4>React js</h4>
+                            </div>
+                        </div>
+
+                        <div class="name-area">
+                            <div class="left">
+                                <h4>Material UI</h4>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div></div>
+
+                        <div></div>
+                        <div class="line">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="name-area">
+                            <div class="right">
+                                <h4>Git</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div id="contact1">
+            <div class="header">
+                <h1>Contact</h1>
+            </div>
+            <div id="contact">
+                <article align="center" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15073.037995470197!2d72.85870529467223!3d19.18386496148767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b5ce2b93d7db%3A0x879a5e5cfe9bb7a8!2sMalad%2C%20Malad%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697303669833!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                <article id="contact-form">
+                    <h3 class="mb-1">Reach out to me</h3>
+                    <form>
+                        <input type="text" id="name" placeholder="Enter Name" required>
+                        <input type="number" id="number" placeholder="Enter Number" minlength="10" required>
+                        <input type="email" id="email" placeholder="Enter Email" required>
+                        <textarea placeholder="Enter Message" id="msg" cols="30" rows="5" required></textarea>
+                        <div>
+                            <button type="submit" id="formSubmit" class="btn btn-warning">Send</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+
+        <hr>
+    </main>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+@import '../css/generic.scss';
+
+#contact1 {
+    .header {
+        @include header;
+    }
+
+    #contact {
+        padding: 0 30px;
+        min-height: 80vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        #contact-form {
+            h3 {
+                color: $navbarBGcolor;
+                font-family: $font-family;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+
+                #email,
+                #msg {
+                    grid-column: 1/span 2;
+                }
+            }
+        }
+
+        #map {
+            iframe {
+                height: 330px;
+                width: 95%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+    #contact1 {
+        .header {
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        #contact {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            #contact-form {
+
+                h3 {
+                    margin-top: 10px;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            #map {
+
+                iframe {
+                    height: 300px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

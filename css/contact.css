@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FEFCF3;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #27374D;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input {
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #27374D;
+  padding: 10px 5px 0 5px;
+  color: #27374D;
+}
+input:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #27374D;
+  padding: 10px 5px 0 5px;
+  color: #27374D;
+}
+textarea:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+#contact1 .header {
+  text-align: center;
+}
+#contact1 .header h1 {
+  font-family: "Playfair Display", serif;
+  color: #27374D;
+}
+#contact1 #contact {
+  padding: 0 30px;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+#contact1 #contact #contact-form h3 {
+  color: #27374D;
+  font-family: "Playfair Display", serif;
+}
+#contact1 #contact #contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#contact1 #contact #contact-form form #email,
+#contact1 #contact #contact-form form #msg {
+  grid-column: 1/span 2;
+}
+#contact1 #contact #map iframe {
+  height: 330px;
+  width: 95%;
+}
+
+@media (max-width: 767px) {
+  #contact1 .header h1 {
+    font-size: 35px;
+  }
+  #contact1 #contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact1 #contact #contact-form h3 {
+    margin-top: 10px;
+  }
+  #contact1 #contact #contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact1 #contact #map iframe {
+    height: 300px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.css.map */

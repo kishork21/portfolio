@@ -1,0 +1,188 @@
+@import './generic.scss';
+
+@mixin positon($left, $right, $float, $color) {
+    border-radius: 10px;
+    margin: 0 #{$right} 30px #{$left};
+    background-color: #{$color};
+    width: 50%;
+    float: #{$float};
+
+    h4 {
+        display: flex;
+        align-items: center;
+        line-height: 80px;
+        color: white;
+        justify-content: center;
+        font-family: $font-family;
+    }
+
+    &:hover {
+        transform: scale(1.07);
+        z-index: 2;
+    }
+}
+
+#skills1 {
+    .header {
+        @include header;
+    }
+
+    #skills {
+        padding: 0 30px;
+
+        #skills-area {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .skills-name {
+                display: grid;
+                grid-template-columns: 1fr 3px 1fr;
+
+                .left {
+                    @include positon(0, 15px, right, #dc3545);
+
+                    .fa-arrow-right {
+                        position: absolute;
+                    }
+                }
+
+                .right {
+                    @include positon(15px, 0, left, #ffd75f);
+                }
+
+                .line {
+                    position: relative;
+                    background-color: #ffd75f;
+
+                    .dot {
+                        background-color: #dc3545;
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #skills1 {
+        #skills {
+            #skills-area {
+                .name-area {
+
+                    .left,
+                    .right {
+                        width: 65%;
+
+
+                        h4 {
+                            line-height: 70px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:767px) {
+            .header {
+
+                h1 {
+                    font-size: 35px;
+                }
+            }
+
+            #skills {
+                padding: 20px;
+
+                #skills-area {
+                    display: flex;
+                    flex-direction: column;
+
+                    .skills-name {
+
+                        .left,
+                        .right {
+                            border-radius: 10px 0;
+                            width: 100%;
+                            height: 30px;
+
+                            h4 {
+                                line-height: 30px;
+                                font-size: 10px;
+                            }
+                        }
+
+                        .line {
+                            .dot {
+                                height: 10px;
+                                width: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width:767px) {
+//     #skills {
+//         padding: 20px;
+
+//         #skills-area {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+
+//             .skills-name {
+
+//                 .left,
+//                 .right {
+//                     width: 100%;
+//                     border-radius: 5px;
+
+//                     h4 {
+//                         line-height: 40px;
+//                         font-size: 18px;
+//                     }
+//                 }
+
+//             }
+
+//             @media only screen and (min-width: 320px) and (max-width: 425px) {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+
+//                 .skills-name {
+
+//                     .name-area {
+//                         margin-bottom: 30px;
+
+//                         .left,
+//                         .right {
+//                             width: 100%;
+//                             border-radius: 5px;
+//                             margin-bottom: 0;
+
+//                             h4 {
+//                                 line-height: 40px;
+//                                 font-size: 20px;
+//                             }
+//                         }
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+// }

@@ -1,0 +1,113 @@
+@import '../css/generic.scss';
+
+@mixin display($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+}
+
+#about1 {
+    .header {
+        @include header;
+    }
+
+    #about {
+        padding: 0 30px;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        #about-info {
+            @include display(column);
+
+            p {
+                font-size: 20px;
+
+                @media only screen and (min-width: 320px) and (max-width: 425px) {
+                    font-size: 15px;
+                }
+            }
+
+            .contact-btn-area {
+
+                #download-cv {
+                    font-size: 15px;
+                }
+
+                // #contact-btn {
+                //     font-size: 15px;
+
+                //     &:hover {
+                //         color: white !important;
+                //     }
+                // }
+            }
+        }
+
+        #about-img {
+            @include display(column);
+            align-items: center;
+
+            img {
+                width: 60%;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+                animation: animate 5s ease-in-out infinite;
+                transition: all ls ease-in-out;
+            }
+
+            @keyframes animate {
+                0% {
+                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                }
+
+                50% {
+                    border-radius: 30% 60% 70% 40%/50% 60% 70% 60%;
+                }
+
+                100% {
+                    border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    #about1 {
+        .header {
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        #about {
+            padding: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+
+
+            #about-info {
+                height: 50vh;
+
+                .contact-btn-area {
+
+                    #download-cv,
+                    button {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+
+            #about-img {
+                height: 50vh;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

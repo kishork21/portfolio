@@ -1,0 +1,172 @@
+@import '../css/generic.scss';
+
+#home1 {
+
+    .header {
+        text-align: center;
+
+        h1 {
+            font-family: $font-family;
+            color: $navbarBGcolor;
+            margin-left: 32%;
+        }
+    }
+
+    #home {
+        width: 100%;
+        padding: 0 30px;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        #imgContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        #intro1 {
+            // padding-left: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .just-text {
+                text-transform: uppercase;
+            }
+
+            span.name {
+                padding: 20px 0;
+
+                p {
+                    font-size: 50px;
+                    font-family: $font-family;
+
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .intro-text {
+                font-size: 20px;
+            }
+
+            .contact-btn-area {
+
+                button {
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    #home1 {
+        .header {
+            h1 {
+                margin-left: 43%;
+            }
+        }
+
+        #home {
+            #intro1 {
+                .name {
+                    p {
+                        font-size: 35px !important;
+
+                        span {
+                            font-size: 35px !important;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media (max-width:767px) {
+
+            .header {
+
+                h1 {
+                    margin: 0;
+                    font-size: 35px;
+                }
+            }
+
+            #home {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+                #imgContainer {
+                    img {
+                        width: 70%;
+
+                        @media only screen and (min-width: 320px) and (max-width: 425px) {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                #intro1 {
+                    margin-top: 40px;
+
+                    .just-text {
+                        font-size: 15px;
+                    }
+
+                    span.name {
+                        padding: 10px 0;
+
+                        p {
+                            font-size: 28px !important;
+
+                            span {
+                                font-size: 28px !important;
+                            }
+                        }
+                    }
+
+                    @media only screen and (min-width: 320px) and (max-width: 425px) {
+                        .just-text {
+                            font-size: 11px;
+                        }
+
+                        span.name {
+
+                            p {
+                                font-size: 19px;
+
+                                span {
+                                    font-size: 19px;
+                                }
+                            }
+                        }
+                    }
+
+                    .intro-text {
+                        font-size: 15px;
+                    }
+
+                    .contact-btn-area {
+
+                        a {
+                            font-size: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
