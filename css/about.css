@@ -93,7 +93,7 @@ button:focus-visible {
   align-items: center;
 }
 #about1 #about #about-img img {
-  width: 60%;
+  width: 40%;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   animation: animate 5s ease-in-out infinite;
   transition: all ls ease-in-out;
@@ -120,16 +120,16 @@ button:focus-visible {
     flex-direction: column-reverse;
   }
   #about1 #about #about-info {
-    height: 50vh;
+    height: 40vh;
   }
   #about1 #about #about-info .contact-btn-area #download-cv,
   #about1 #about #about-info .contact-btn-area button {
     font-size: 10px !important;
   }
   #about1 #about #about-img {
-    height: 50vh;
+    height: 60vh;
   }
   #about1 #about #about-img img {
-    width: 80%;
+    width: 60%;
   }
 }/*# sourceMappingURL=about.css.map */
