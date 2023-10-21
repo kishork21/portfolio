@@ -1,14 +1,19 @@
 
+let count = 0;
 function sidebar1() {
-    if (document.getElementById('links').style.display == 'none') {
-        document.getElementById('links').style.display = 'block';
-    } else {
-        document.getElementById('links').style.display = 'none';
+    if (count > 0) {
+
+        if (document.getElementById('links').style.display == 'none') {
+            document.getElementById('links').style.display = 'block';
+        } else {
+            document.getElementById('links').style.display = 'none';
+        }
     }
 }
 
 function sidebar2() {
     document.getElementById('links').style.display = 'block';
+    count += 1;
 }
 
 let portfolio = {
