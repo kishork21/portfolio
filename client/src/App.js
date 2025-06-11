@@ -14,8 +14,7 @@ import "./App.css";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Load theme from localStorage on mount and set darkMode state
-  function changeTheme() {
+  useEffect(() => {
     const isDark = darkMode;
     const bgColor = isDark ? "#222222" : "#f9f9f9";
     const fontColor = isDark ? "#e0e0e0" : "#333";
@@ -50,14 +49,10 @@ function App() {
       toggleBtn.style.color = toggleColor;
       toggleBtn.style.transition = "background-color 0.3s ease, color 0.3s ease";
     }
-  }
 
-  // Apply theme styles when darkMode changes
-  useEffect(() => {
-    changeTheme();
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [darkMode]);
 
-  // Toggle theme handler
   const toggleTheme = () => {
     setDarkMode((prev) => !prev);
   };
